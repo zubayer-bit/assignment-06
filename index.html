@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+
+    <!-- fav icon(tab logo) -->
+     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+     <!-- font awesome cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- google fonts  [ak sathe 2ta font "get" dea then "copy link "korle 2ta font ee chole asbe]-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+      <!-- tailwind + daisyui -->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- style.css link -->
+<link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-[#F0FDF4]">
+    <!--nav bar  -->
+    <section class="nav-bar  ">
+      <div class="navbar bg-base-100 shadow-sm bg-[#15803D] px-[40px]">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+       
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl text-white">Green Earth</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li class="text-white"><a>About</a></li>
+      <li>
+        
+          <summary class="text-white">Gallery</summary>
+          
+        
+      </li>
+      <li class="text-white"><a>Plant a Tree</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn bg-[#FACC15] rounded-[999px] border-0 shadow-none text-[#15803D]">Plant a Tree</a>
+  </div>
+</div>
+    </section>
+
+    <!-- plant a tree, grow a future -->
+     <section class="plant bg-[#CFF0DC]">
+      <div class="parent-div flex justify-between items-center">
+         <img class="w-[25%]" src="./assets/hero-leaf1.png" alt="">
+
+         
+            <div class="middle-div text-center ">
+            <h1 class="font-bold text-[47px] ">Plant a Tree, Grow a Future</h1>
+            <p class="font-normal text-[17px]">Join our mission to plant 1 million trees and make the Earth greener for future
+generations.</p>
+            <button class="btn text-[#15803D] rounded-[999px] bg-[#FACC15] mt-[18px]">Get Involved</button>
+         </div>
+         
+
+         <img class=" w-[25%] " src="./assets/hero-leaf2.png" alt="">
+      </div>
+     </section>
+
+      <!-- spining korar code -->
+      <section id="spinner"  class="hidden flex justify-center items-center py-10">
+<span class="loading loading-dots loading-xs"></span>
+      </section>
+
+
+     <!-- Choose Your Trees -->
+    <section class="w-[1140px] mt-[100px] mx-auto space-x-[30px]">
+       <div class="text-center  ">
+      <h1 class="font-semibold text-[32px] mb-[40px]">Choose Your Trees</h1>
+
+  <div class="main-container flex">
+        <!-- left side -->
+      <div  class="left  ">
+        <h1 class="font-semibold text-[28px]  text-left mb-[16px]">Categories</h1>
+
+        <!-- button ar div -->
+        <div id="level-container">
+          
+        </div>
+        
+      </div>
+      <!-- middle -->
+      <!-- ******************* by default card (start)************************ -->
+      <div id="post-container-div" class="grid" >
+       
+            
+      </div>
+      <!-- ******************************by default card (end)******************************** -->
+
+      <!-- right side -->
+      <div class="p-[10px] border-2 right w-[250px] bg-white ml-[10px] rounded-[16px]">
+        <h1 class="font-semibold text-[20px] text-left mb-[8px]">Your Cart</h1>
+
+        <div id="adding-tress-details" class=" max-h-[55px] ">
+
+          <!-- name,price div -->
+
+       <!-- <div id="name-price-div">
+        <div  class="flex justify-between rounded-[8px] items-center border-2 bg-[#F0FDF4]"> 
+        <div class="text-div">
+            <h1 class="text-left font-semibold text-[14px]">${name}</h1>
+          <h2 class="text-left font-normal text-[16px]"><i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${daam}</h2>
+        </div>
+
+          <div class="btn-div">
+            <button id="remove-his"><i class="fa-solid fa-xmark icon-color"></i></button>
+          </div>
+       </div> 
+       </div> -->
+
+       <!-- total price div -->
+        <div id="total-price-display" class="">
+          <h1>Total:</h1>
+        </div>
+
+        </div>
+
+        <!-- <div id="total-price">
+          <h1>Total:</h1>
+        </div> -->
+
+      </div>
+  </div>
+</div>
+    </section>
+
+
+
+     <script src="./script.js"></script>
+</body>
+</html>

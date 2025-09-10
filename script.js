@@ -73,7 +73,7 @@ const displayLevelWord = (words) => {
           
           <div class="text-left flex-grow p-[7px] ">
             <div class="mt-[5px]">
-              <h1 class="mb-[5px] font-semibold text-[12px]">${word.name}</h1>
+              <button onclick="modalDetails(${word.id})" class="mb-[5px] font-semibold text-[12px]"><span>${word.name}</span></button>
             <p class="mb-[13px] font-normal text-[11px]">${word.description}</p>
             </div>
 
@@ -106,20 +106,49 @@ const displayLevelWord = (words) => {
 
 }
 
-
+// **************************modal start***************
+//modal add korar function parent:
+const modalDetails = (modal) =>{
+  // console.log(modal);
+  const url3 = `https://openapi.programming-hero.com/api/plant/${modal}`;
   
- //total price add korar code
-    // let totalPrice = 0;
-    //  //total price adding ar kaj:
-    //   const itemPrice = parseFloat(daam); //convert to num
+  fetch(url3)
+  .then(respon => respon.json())
+  .then(modalData => modalFuntion(modalData.plants));
+}
 
-    //   totalPrice = totalPrice + itemPrice;
+//modal ar value ai function aa asbe:
+const modalFuntion = (modalValue) =>{
+  console.log(modalValue);
+
+  //get container:
+  const modalContainer = document.getElementById('container');
+  modalContainer.innerHTML =`
+  <h3 class="text-lg font-bold mb-[5px]">${modalValue.name}</h3>
+
+    <div class="mb-[5px] ">
+      <img class="w-[100%] h-[340px]  object-cover rounded-[8px]" src="${modalValue.image}" alt="">
+    </div>
+
+    <div>
+       <h1><span>Category:</span>${modalValue.category}</h1>
+      <h1><span>Price:</span><i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${modalValue.price} </h1>
+
+
+       <p class="py-4"><span>Description:</span>${modalValue.description}</p>
+    </div>
+  
+  `;
+
+  document.getElementById('my_modal_5').showModal();
+}
 
 //making adding function
     function history(name, daam){
       // console.log(name, daam);
 
-     
+      //alert() ar code
+     alert(`${name} has been added to the cart.`);
 
       //get container
       const historyContainer = document.getElementById('adding-tress-details');
@@ -232,7 +261,7 @@ const loadPost = () => {
 
 
 
-// const url =  "https://openapi.programming-hero.com/api/plants";
+const url =  "https://openapi.programming-hero.com/api/plants";
 fetch(url)  
 .then(response => response.json())
 .then(data => displayPost(data.plants))

@@ -128,8 +128,8 @@ const displayLevelWord = (words) => {
       //create div
       const createDiv = document.createElement('div');
       createDiv.innerHTML = `
-        <div id="name-price-div">
-        <div  class="flex justify-between rounded-[8px] items-center border-2 bg-[#F0FDF4]"> 
+        <div id="name-price-div" class=" mb-3">
+        <div  class="flex justify-between rounded-[8px] items-center  p-2 bg-[#F0FDF4]"> 
         <div class="text-div">
             <h1 class="text-left font-semibold text-[14px]">${name}</h1>
           <h2 class="text-left font-normal text-[16px]"><i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${daam}</h2>
@@ -175,7 +175,7 @@ const displayLevelWord = (words) => {
     const totalDisplay = document.getElementById('total-price-display');
 
     if(totalAmount > 0){
-      totalDisplay.textContent = `Total:${totalAmount.toFixed(2)}`
+      totalDisplay.innerHTML = `Total:<i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${totalAmount.toFixed(2)}`
     }
     else{
       totalDisplay.textContent = '';

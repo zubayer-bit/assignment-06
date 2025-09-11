@@ -127,7 +127,7 @@ const modalFuntion = (modalValue) =>{
   <h3 class="text-lg font-bold mb-[5px]">${modalValue.name}</h3>
 
     <div class="mb-[5px] ">
-      <img class="w-[100%] h-[340px]  object-cover rounded-[8px]" src="${modalValue.image}" alt="">
+      <img class="w-[100%] h-[310px] object-cover  rounded-[8px]" src="${modalValue.image}" alt="">
     </div>
 
     <div>

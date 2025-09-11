@@ -71,7 +71,7 @@ const displayLevelWord = (words) => {
           
           <img class="rounded-[8px] h-[100px] w-[100%]  object-cover" src="${word.image}" alt="">
           
-          <div class="text-left flex-grow p-[7px] ">
+          <div class="text-left flex flex-col justify-between flex-grow p-[7px] ">
             <div class="mt-[5px]">
               <button onclick="modalDetails(${word.id})" class="mb-[5px] font-semibold text-[12px]"><span>${word.name}</span></button>
             <p class="mb-[13px] font-normal text-[11px]">${word.description}</p>
@@ -284,11 +284,11 @@ const displayPost = (posts) => {
     //step:2 CREATE  an element (div)..where i store the data...[step:2 forEach() ar  vitore kora hocce jeno...each loop hoa je data ta asbe seta add hoa jabe]
         const postCard = document.createElement('div');
         postCard.innerHTML = `
-         <div class="flex flex-col bg-white max-w-[300px] h-[315px] rounded-[8px]  items-center card-margin">
+         <div class="flex flex-col bg-white max-w-[300px] h-[315px]  rounded-[8px]  items-center card-margin mb-[10px]">
           
           <img class="rounded-[8px] h-[100px] w-[100%]  object-cover" src="${post.image}" alt="">
           
-          <div class="text-left flex-grow p-[7px] ">
+          <div class="text-left flex flex-col justify-between flex-grow p-[7px] ">
             <div class="mt-[5px]">
               <h1 class="mb-[5px] font-semibold text-[12px]">${post.name}</h1>
             <p class="mb-[13px] font-normal text-[11px]">${post.description}</p>

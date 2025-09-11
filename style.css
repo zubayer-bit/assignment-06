@@ -221,7 +221,7 @@
     width: 90%;
 }
 .donate-div{
-    width: 96%;
+    max-width: 318px;
 }
 
 }

@@ -79,7 +79,7 @@ const displayLevelWord = (words) => {
 
             <div class=" ">
               <div class="flex justify-between mb-[12px] flex-grow">
-              <h2><span class="py-[3px] px-[7px]  rounded-[400px] text-[14px] font-medium text-[#15803D] bg-[#DCFCE7]">${word.category}</span></h2>
+              <h2><span class="py-[3px] px-[7px]  rounded-[400px] text-[14px] font-medium text-[#15803D] bg-[#DCFCE7] geist-normal">${word.category}</span></h2>
               <p><span class="font-semibold text-[14px]"><i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${word.price}</span></p>
             </div>
 
@@ -131,11 +131,11 @@ const modalFuntion = (modalValue) =>{
     </div>
 
     <div>
-       <h1><span>Category:</span>${modalValue.category}</h1>
-      <h1><span>Price:</span><i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${modalValue.price} </h1>
+       <h1><span class="font-semibold">Category:</span>${modalValue.category}</h1>
+      <h1><span class="font-semibold">Price:</span><i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${modalValue.price} </h1>
 
 
-       <p class="py-4"><span>Description:</span>${modalValue.description}</p>
+       <p class="py-4"><span class="font-semibold">Description:</span>${modalValue.description}</p>
     </div>
   
   `;
@@ -242,7 +242,7 @@ for(let eachLesson of lesson){
 //step:3 create element
 const btnDiv = document.createElement("div");
 btnDiv.innerHTML = `
-<button id="lesson-btn-${eachLesson.id}" onclick= "loadLevelWord(${eachLesson.id})" class="lesson-btns w-[100%] text-left  py-[12px] pl-[6px]  hover:bg-[#3ca461] hover:text-white  font-semibold text-[20px] rounded-[6px]">${eachLesson.category_name}</button>
+<button id="lesson-btn-${eachLesson.id}" onclick= "loadLevelWord(${eachLesson.id})" class="lesson-btns w-[100%] text-left  py-[12px] pl-[6px]  hover:bg-[#3ca461] hover:text-white  font-semibold text-[20px] rounded-[6px] ">${eachLesson.category_name}</button>
 `;
 // console.log(btnDiv);
 
@@ -296,7 +296,7 @@ const displayPost = (posts) => {
 
             <div class=" ">
               <div class="flex justify-between mb-[12px] flex-grow">
-              <h2><span class="py-[3px] px-[7px]  rounded-[400px] text-[14px] font-medium text-[#15803D] bg-[#DCFCE7]">${post.category}</span></h2>
+              <h2><span class="py-[3px] px-[7px]  rounded-[400px] text-[14px] font-medium text-[#15803D] bg-[#DCFCE7] geist-normal">${post.category}</span></h2>
               <p><span class="font-semibold text-[14px]"><i class="fa-solid fa-bangladeshi-taka-sign icon"></i>${post.price}</span></p>
             </div>
 

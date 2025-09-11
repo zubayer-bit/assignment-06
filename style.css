@@ -1,6 +1,31 @@
 @import "tailwindcss";
 
 
+/* font */
+
+/* *--> mane sobar font hobe "poppins */
+*{
+      
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+}
+
+
+
+
+.geist-normal {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+
+
 .left{
     width: 20%;
 }

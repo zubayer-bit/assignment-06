@@ -194,7 +194,7 @@
     }
 .impact-title{
         
-        font-size: 27px;
+        font-size: 2px;
         font-weight: 600;
         width: 100%;
         
@@ -216,6 +216,14 @@
     .three-div{
         margin-top: 15px;
     }
+}
+
+/* Plant a Tree Today */
+.form-div{
+    width: 90%;
+}
+.donate-div{
+    width: 96%;
 }
 
 }

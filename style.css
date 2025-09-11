@@ -162,4 +162,60 @@
         }
     }
    }
+
+   /* About the Campaign */
+
+   .about-sec{
+    margin-bottom: 190px;
+   
+   .about-container{
+    display: flex;
+    flex-direction: column;
+
+    .campaign-text-div{
+        width: 90%;
+    }
+    
+    .cam-paragraph-div{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .cap-title-div{
+        font-weight: 500;
+        font-size: medium;
+    }
+   }
+}
+
+/* Our Impact */
+.impact-div-title{
+       
+    }
+.impact-title{
+        
+        font-size: 27px;
+        font-weight: 600;
+        width: 100%;
+        
+        margin-top: -15px;
+        
+    }
+.Impact-container{
+    display: flex;
+    flex-direction: column;
+   
+    
+
+    
+
+    .two-div{
+        margin-top: 15px;
+    }
+
+    .three-div{
+        margin-top: 15px;
+    }
+}
+
 }

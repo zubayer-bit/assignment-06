@@ -284,7 +284,7 @@ const displayPost = (posts) => {
     //step:2 CREATE  an element (div)..where i store the data...[step:2 forEach() ar  vitore kora hocce jeno...each loop hoa je data ta asbe seta add hoa jabe]
         const postCard = document.createElement('div');
         postCard.innerHTML = `
-         <div class="flex flex-col bg-white max-w-[300px] h-[315px] rounded-[8px]  items-center">
+         <div class="flex flex-col bg-white max-w-[300px] h-[315px] rounded-[8px]  items-center card-margin">
           
           <img class="rounded-[8px] h-[100px] w-[100%]  object-cover" src="${post.image}" alt="">
           

@@ -25,55 +25,38 @@
 <link rel="stylesheet" href="./style.css">
 </head>
 <body class="bg-[#F0FDF4]">
-    <!--nav bar  -->
-    <section class="nav-bar  ">
-      <div class="navbar bg-base-100 shadow-sm bg-[#15803D] px-[40px]">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-       
+    
+    <!-- nav bar new -->
+     <section class="nav-new-container py-[12px] bg-[#15803D] flex justify-between items-center px-[65.5px]"> 
+      <div class="first-one">
+        <h1 class="font-semibold text-[18px] text-white green-div">Green Earth</h1>
       </div>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        
-      </ul>
-    </div>
-    <a class="btn btn-ghost text-xl text-white">Green Earth</a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li class="text-white font-medium text-[16px]"><a>About</a></li>
-      <li>
-        
-          <summary class="text-white font-medium text-[16px]">Gallery</summary>
-          
-        
-      </li>
-      <li class="text-white font-medium text-[16px]"><a>Plant a Tree</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="btn bg-[#FACC15] rounded-[999px] border-0 shadow-none text-[#15803D] font-medium text-[16px]">Plant a Tree</a>
-  </div>
-</div>
-    </section>
-
+      <div class="second-one">
+        <ul class="flex justify-between items-center gap-x-[24px] about-div">
+          <li class="font-medium text-[16px] text-white"><a href="">About</a></li>
+          <li class="font-medium text-[16px] text-white"><a href="">Gallery</a></li>
+          <li class="font-medium text-[16px] text-white"><a href="">Plant a Tree</a></li>
+        </ul>
+      </div>
+      <div class="third-one">
+        <button class="plant-btn-div rounded-[999px] py-[6px] px-[15px] bg-[#FACC15] text-[#15803D] font-medium text-[16px]">Plant a Tree</button>
+      </div>
+     </section>
     <!-- plant a tree, grow a future -->
      <section class="plant bg-[#CFF0DC]">
       <div class="parent-div flex justify-between items-center">
-         <img class="w-[25%]" src="./assets/hero-leaf1.png" alt="">
+         <img class="w-[25%] img-div1" src="./assets/hero-leaf1.png" alt="">
 
          
             <div class="middle-div text-center ">
-            <h1 class="font-bold text-[47px] ">Plant a Tree, Grow a Future</h1>
-            <p class="font-normal text-[17px]">Join our mission to plant 1 million trees and make the Earth greener for future
+            <h1 class="font-bold text-[47px] text-div1">Plant a Tree, Grow a Future</h1>
+            <p class="font-normal text-[17px] text-div2">Join our mission to plant 1 million trees and make the Earth greener for future
 generations.</p>
-            <button class="btn text-[#15803D] rounded-[999px] bg-[#FACC15] mt-[18px] font-medium text-[16px]">Get Involved</button>
+            <button class="text-div3 btn text-[#15803D] rounded-[999px] bg-[#FACC15] mt-[18px] font-medium text-[16px]">Get Involved</button>
          </div>
          
 
-         <img class=" w-[25%] " src="./assets/hero-leaf2.png" alt="">
+         <img class=" w-[25%] img-div2" src="./assets/hero-leaf2.png" alt="">
       </div>
      </section>
 
@@ -84,32 +67,32 @@ generations.</p>
 
 
      <!-- Choose Your Trees -->
-    <section class="w-[1140px] mt-[100px] mx-auto space-x-[30px]">
-       <div class="text-center  ">
-      <h1 class="font-semibold text-[32px] mb-[40px]">Choose Your Trees</h1>
+    <section class=" max-w-[1140px] mt-[75px] mx-auto space-x-[30px] choose-div">
+       <div class="text-center   ">
+      <h1 class="font-semibold text-[32px] mb-[40px] ">Choose Your Trees</h1>
 
-  <div class="main-container flex">
+  <div class="main-container flex all-item-middle ">
         <!-- left side -->
-      <div  class="left  ">
-        <h1 class="font-semibold text-[28px]  text-left mb-[16px]">Categories</h1>
+      <div  class="left   left-side-div">
+        <h1 class="font-semibold text-[28px]  text-left mb-[16px] ">Categories</h1>
 
         <!-- button ar div -->
-        <div id="level-container">
+        <div id="level-container" class="">
           
         </div>
         
       </div>
       <!-- middle -->
       <!-- ******************* by default card (start)************************ -->
-      <div id="post-container-div" class="grid" >
+      <div id="post-container-div" class="grid  middle-div" >
        
             
       </div>
       <!-- ******************************by default card (end)******************************** -->
 
       <!-- right side -->
-      <div class="flex flex-col p-[10px]  right w-[250px] bg-white ml-[10px] rounded-[16px]">
-        <h1 class="font-semibold text-[20px] text-left mb-[8px]">Your Cart</h1>
+      <div class="right-side-div flex flex-col p-[10px]  right w-[250px] bg-white ml-[10px] rounded-[16px]">
+        <h1 class="font-semibold text-[20px] text-left mb-[8px] your-cart-text">Your Cart</h1>
 
         <div id="adding-tress-details" class=" overflow-y-auto ">
 
@@ -181,7 +164,7 @@ generations.</p>
    <section class="px-[135px] py-[100px]  mt-[100px] text-center bg-[#CFF0DC]">
     <h1 class="font-semibold text-[32px] mb-[40px]">Our Impact</h1>
 
-    <div class="Impact-container flex justify-between items-center  ">
+    <div class="Impact-container flex justify-between items-center  space-x-[50px]">
       <div class="one-div  bg-[#FFFFFF] w-[400px] h-[156px] text-center flex flex-col justify-center items-center rounded-[12px] hover:bg-[#6acc8e] shadow">
         <h1 class="font-semibold text-[20px] text-[#15803D] geist-normal">500K+</h1>
         <p class="font-normal text-[12px] geist-normal">Trees Planted</p>

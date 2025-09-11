@@ -63,3 +63,103 @@
     background-color: #15803D;
     color: white;
 }
+
+
+/* responsive */
+@media screen and (max-width: 576px) {
+
+    /* nav bar */
+   .nav-new-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+    .green-div{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about-div{
+        margin-bottom: 10px;
+    }
+
+    .plant-btn-div{
+        margin-bottom: 10px;
+    }
+   }
+
+
+   /* plant a tree */
+   .parent-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   }
+
+   .img-div2{
+    width: 50%;
+    
+   }
+
+   .img-div1{
+    width: 50%;
+   }
+
+   .text-div1{
+    font-size: 25px;
+    font-weight: 500;
+   }
+
+   .text-div2{
+    font-size: 14px;
+   }
+
+   .text-div3{
+    font-size: 14px;
+    font-weight: 500;
+    padding:4px 10px;
+   }
+
+
+   /* choose your trees */
+   .main-container{
+    display: flex;
+    flex-direction: column;
+    
+   
+
+    .left-side-div{
+        /* border: 2px solid; */
+        width: 70%;
+        margin-left: 20%;
+        
+    }
+
+    .middle-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 20px;
+    height: 794px;
+    overflow-y: scroll;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 3px;
+    
+    }
+    .card-margin{
+        margin-bottom: 15px;
+        height: fit-content;
+    }
+
+    .right-side-div{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20px;
+
+        .your-cart-text{
+            font-size: 17px;
+        }
+    }
+   }
+}
